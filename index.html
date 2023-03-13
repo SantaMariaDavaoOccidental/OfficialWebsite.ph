@@ -1,0 +1,353 @@
+ <!DOCTYPE html>
+<html>
+
+
+
+
+
+
+<head>
+  <title>Santa Maria Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script type="text/javascript">
+function display_c(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct()',refresh)
+}
+
+function display_ct() {
+var x = new Date()
+document.getElementById('ct').innerHTML = x;
+display_c();
+ }
+</script>
+
+
+
+
+
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+a:hover{
+
+  color: #DCDCDC;
+}
+a{
+  color: white;
+  text-decoration: none;
+  
+}
+
+.NewsPanel{
+
+  position: absolute; padding: 0px 3px 0px 3px;  text-indent: 10px;  font-size: 12px; width: 250px; height: 45px; background-color: none; text-align: justify; font-weight: bold; color: white; z-index: 2; margin: 39% 0% 0% 0%; float: bottom;overflow: hidden; line-height: 1.2;  text-shadow: 1px 1px 2px #000000; 
+}
+.NewsPanel-SeeMore{
+
+  position: absolute; width: 100px; height: 21px; background-color: none; font-weight: bold; font-size: 17px; z-index: 2; margin: 54% 0% 0% 48%; float: bottom;  text-align:   right;   text-shadow: 1px 1px 2px #000000;
+}
+
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+
+
+
+  </style>
+
+</head>
+
+<body onload="display_ct()"   style="">
+
+
+
+
+
+<div style="background-color: white; height: 50px; width: 100%; padding: 0%;      ">
+<div style="float: right;  margin: 0.5% 1% 0% 0%; ">
+
+<a href="https://web.facebook.com/stamariamunicipalinformation/?_rdc=1&_rdr" target="_blank">
+<img src="static/Home/facebook-logo.png"  alt="HTML5 Icon" width="30" height="30" style="margin: 0px 0px 0px 0px;"/>
+</a>
+
+<a href="https://www.instagram.com" target="_blank">
+<img src="static/Home/instagram-logo.png" alt="HTML5 Icon" width="30" height="30" style="margin: 0px 0px 0px 5px;"/>
+</a>
+
+<a href="https://www.twetter.com" target="_blank"/>
+<img src="static/Home/twetter-logo.png" alt="HTML5 Icon" width="30" height="30" style="margin: 0px 0px 0px 5px;">
+</a>
+</div>
+<p style="position: absolute; color: #539165; font-family: Arial Black; font-size: 15px; margin: 1% 0% 0% 1%; ">The Official Website of the Municipality of Santa Maria</p>
+<img src="static/Home/flag.png" alt="HTML5 Icon" width="30" height="15" style=" position: absolute; margin: 1.1% 0% 0% 52.5%; float: left; "/>
+<span id='ct'  style=" position: absolute; margin: 1% 0% 0% 55%; color: #434242; font-size: 13px; " ></span>
+</div>
+
+
+<!-- second navs -->
+<div  style="background-color: #539165; width: 100%; height: 100px; margin: 0% 0% 0% 0%;   z-index: 100; position: -webkit-sticky; position: sticky; top: 0; filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.2));">
+
+<div style=" color: white; position: absolute; background-color: none; width: 6%; height: 100px; margin: 0.5% 0% 0% 1%;">
+  <p style="margin:   0% 0% 0% 0%; font-family: Arial Black; font-size: 22px;">DINKO</p>
+  <p style="margin: -18% 0% 0% 0%; font-family: Arial Black; font-size: 22px;">PARA</p>
+  <p style="margin: -18% 0% 0% 0%; font-family: Arial Black; font-size: 22px;">SA</p>
+  <p style="margin: -18% 0% 0% 0%; font-family: Arial Black; font-size: 22px;">PROGRESO</p>
+</div>
+
+<img src="static/Home/SantaMariaLogo.png" style=" position: absolute;  width: 80px; height: 80px; margin: 0.6% 0% 0% 15%;  "/>
+
+<div style=" position: absolute; background-color:none; width: 70%; float: right; margin: 3% 0% 0% 22%;">
+<a href="" style="margin: 0% 0% 0% 0%; text-decoration: none; font-weight: bolder; cursor: context-menu;">KNOW ABOUT SANTA MARIA</a>
+<a href="" style="margin: 0% 0% 0% 2%; text-decoration: none; font-weight: bolder; cursor: context-menu;">DEPARTMENTS</a>
+<a href="" style="margin: 0% 0% 0% 2%; text-decoration: none; font-weight: bolder; cursor: context-menu;">SERVICES</a>
+<a href="" style="margin: 0% 0% 0% 2%; text-decoration: none; font-weight: bolder; cursor: context-menu;">TRANSPARENCY</a>
+<a href="news.html" style="margin: 0% 0% 0% 2%; text-decoration: none; font-weight: bolder; cursor: context-menu;">NEWS</a>
+<a href="" style="margin: 0% 0% 0% 2%; text-decoration: none; font-weight: bolder; cursor: context-menu;">CONTACT US</a>
+
+
+
+</div>
+
+</div>
+
+
+  <div class="spinner-grow text-muted" style=" position: absolute;  "></div>
+
+<div id="demo" class="carousel slide" data-ride="carousel" style=" margin-top: 0px;  ">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static/Home/slide2.png" alt="Los Angeles" width="1100" height="100%"/>
+      <div class="carousel-caption">
+        <h3  style=" font-size: 50px; color: orange;" >BE</h3>
+        <p>We had such a great time in LA!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/Home/slide2.png" alt="Chicago" width="1100" height="100%"/>
+      <div class="carousel-caption">
+        <h3  style=" font-size: 50px;   color: orange;" >TRAVEL GUIDE</h3>
+        <p>Thank you, Chicago!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/Home/slide3.png" alt="New York" width="1100" height="100%"/>
+      <div class="carousel-caption">
+        <h3  style=" font-size: 50px;   color: orange;" >AWARD AND ACHIEVEMENTS</h3>
+        <p>We love the Big Apple!</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</div>
+
+
+
+<!-- <div style="background-color: whitesmoke; width: 100%; height: 500px;">
+<img src="static/Home/flagBackground.png" alt="HTML5 Icon" style="position: absolute; margin: 0% 0% 0% -10%; opacity: 80%; ">
+</div> -->
+
+<div style="background-color: white; width: 100%; height: 1000px; margin: 5% 0% 0% 0%; ">
+<h1 style="margin: 0% 0% 5% 22%;">PLANS AND PROGRAMS</h1>
+
+
+
+  <div style=" width: 70%; height: 140px; background-color: #539165; margin: 1% 15% 0% 5%; border-radius: 100px; filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.4));  ">
+    
+      <a href="https://colorhunt.co/palettes/grey">
+        <div style="width: 20%; height: 100%; background-color: white; border: solid #539165 2px; border-radius: 100px; overflow: hidden;">
+
+                <img  src="static/Home/agri.png" style=" margin-top: 2%; display: block; margin-left: auto; margin-right: auto; width: 50%; width: 110px; height: 110px; " />
+
+          <p style="float: bottom; text-align: center; font-family: arial; font-weight: bold; color: black; ">Agriculture</p>
+        </div>
+      </a>
+  </div>
+
+
+  <div style=" width: 70%; height: 140px; background-color: #DF2E38; margin: 1% 15% 0% 5%; border-radius: 100px; ">
+      <a href="https://colorhunt.co/palettes/grey">
+        <div style="width: 20%; height: 100%; background-color: white; border: solid #DF2E38 2px;border-radius: 100px; overflow: hidden; ">
+
+                <img  src="static/Home/risk.png" style=" margin-top: 2%; display: block; margin-left: auto; margin-right: auto; width: 50%; width: 110px; height: 110px; " />
+
+          <p style="float: bottom; text-align: center; font-family: arial; font-weight: bold; color: black; ">Disaster and Risk</p>
+        </div>
+      </a>
+  </div>
+
+  <div style=" width: 70%; height: 140px; background-color: lightskyblue; margin: 1% 15% 0% 5%; border-radius: 100px; ">
+      <a href="https://colorhunt.co/palettes/grey">
+        <div style="width: 20%; height: 100%; background-color: white; border: solid lightskyblue 2px;border-radius: 100px; overflow: hidden; ">
+
+                <img  src="static/Home/health.png" style=" margin-top: 2%; display: block; margin-left: auto; margin-right: auto; width: 50%; width: 110px; height: 110px; " />
+
+          <p style="float: bottom; text-align: center; font-family: arial; font-weight: bold; color: black; ">Health</p>
+        </div>
+      </a>
+  </div>
+
+
+  <div style=" width: 70%; height: 140px; background-color: orange; margin: 1% 15% 0% 5%; border-radius: 100px; ">
+      <a href="https://colorhunt.co/palettes/grey">
+        <div style="width: 20%; height: 100%; background-color: white; border: solid orange 2px;border-radius: 100px; overflow: hidden; ">
+
+                <img  src="static/Home/education.png" style=" margin-top: 2%; display: block; margin-left: auto; margin-right: auto; width: 50%; width: 110px; height: 110px; " />
+
+          <p style="float: bottom; text-align: center; font-family: arial; font-weight: bold; color: black; ">Education</p>
+        </div>
+      </a>
+  </div>
+
+
+
+<!-- news -->
+<div style="position: absolute; width: 297px; height: 1000px; background-color: #539165; margin:-58.1% 0% 0% 78%; border-radius: 0px; 
+">
+  
+  <p style="color: orange; font-size: 20px; font-weight: bold; margin: 10px;">HAPPENING NOW...</p>
+
+<!-- ARTICLE 1 -->
+  <div style="background-color: white; width: 250px; height: 200px; margin: 10% 0% 0% 8%; overflow: hidden;  cursor: context-menu; ">
+
+       <div class="NewsPanel">
+         <p >The Municipal Government of Sta. Maria celebrates the International Women's Day with the theme "We, for Gender Equality and Inclusive Society</p>
+       </div>
+
+       <div class="NewsPanel-SeeMore">
+            <a href=""  style=" font-weight: bold;  color: DodgerBlue; text-decoration: none;  cursor: context-menu; ">SEE MORE...</a>
+        </div>
+  
+        <div style="position: absolute; width: 250px; height: 18px; background-color: none; color: white; font-size: 12px; z-index: 2; margin: 61% 0% 0% 0%; float: bottom;   text-shadow: 1px    1px 2px #000000;  ">
+          <p style="text-align: left; color: DodgerBlue; font-weight: bold;"> Dated: March 8, 2023</p>
+        </div>
+
+        <img class="zoom"  src="static/News/GendersEquality.png" style="width: 100%; height: 100%;  transition: transform .5s">
+
+  </div>
+<!-- END OF ARTICLE -->
+
+<!-- ARTICLE 2 -->
+  <div style="background-color: white; width: 250px; height: 200px; margin: 10% 0% 0% 8%; overflow: hidden;  cursor: context-menu;">
+
+       <div class="NewsPanel">
+         <p >The Provincial Disaster Risk Reduction and Management Office (PDRRMO) of Davao Occidental facilitated the Refresher Training for incoming NSED which focused on High Angle Rope Rescue. </p>
+       </div>
+
+       <div class="NewsPanel-SeeMore">
+            <a href=""  style=" font-weight: bold;  color: DodgerBlue; text-decoration: none;  cursor: context-menu; ">SEE MORE...</a>
+        </div>
+  
+        <div style="position: absolute; width: 250px; height: 18px; background-color: none; color: white; font-size: 12px; z-index: 2; margin: 61% 0% 0% 0%; float: bottom;   text-shadow: 1px    1px 2px #000000;  ">
+          <p style="text-align: left; color: DodgerBlue; font-weight: bold;"> Dated: March 6, 2023 | Monday</p>
+        </div>
+
+        <img class="zoom"  src="static/News/Provincial Disaster Risk Reduction and Management.png" style="width: 100%; height: 100%;  transition: transform .5s"/>
+
+  </div>
+<!-- END OF ARTICLE -->
+
+<!-- ARTICLE 3 -->
+  <div style="background-color: white; width: 250px; height: 200px; margin: 10% 0% 0% 8%; overflow: hidden;  cursor: context-menu;">
+
+       <div class="NewsPanel">
+         <p >PROVISION OF BARANGAY ISOLATION UNIT IN BARANGAY KIDADAN: Gitambongan ni Mayor Dinko Bautista kauban ang Municipal and Regional KALAHI Offices ug Barangay Council ang Ground Breaking Ceremony sa Provision of Barangay Isiolation Unit sa </p>
+       </div>
+
+       <div class="NewsPanel-SeeMore">
+            <a href=""  style=" font-weight: bold;  color: DodgerBlue; text-decoration: none;  cursor: context-menu; ">SEE MORE...</a>
+        </div>
+  
+        <div style="position: absolute; width: 250px; height: 18px; background-color: none; color: white; font-size: 12px; z-index: 2; margin: 61% 0% 0% 0%; float: bottom;   text-shadow: 1px    1px 2px #000000;  ">
+          <p style="text-align: left; color: DodgerBlue; font-weight: bold;"> Dated: March 7, 2023 | Tuesday</p>
+        </div>
+
+        <img class="zoom"  src="static/News/PROVISION OF BARANGAY ISOLATION UNIT IN BARANGAY KIDADAN.png" style="width: 100%; height: 100%;  transition: transform .5s"/>
+
+  </div>
+<!-- END OF ARTICLE -->
+
+<!-- ARTICLE 4 -->
+  <div style="background-color: white; width: 250px; height: 200px; margin: 10% 0% 0% 8%; overflow: hidden;  cursor: context-menu;">
+
+       <div class="NewsPanel">
+         <p >The Sta. Maria Fire Station Personnel, spearheaded by SFO3 Joseph A Esmores, Acting Municipal Fire Marshal, under the supervision of FCINSP KARL P BADILLES, Acting Provincial Fire Director thru the leadership of FSSUPT RICHARD V ARBUTANTE, DSC, MPSM, Regional Director, BFP XI, attended the pre-planning meeting in preparation for the upcoming 1st Quarter Nationwide Simultaneous Earthquake Drill (NSED) CY 2023 held at Heracleo Casco Memorial National High School.</p>
+       </div>
+
+       <div class="NewsPanel-SeeMore">
+            <a href=""  style=" font-weight: bold;  color: DodgerBlue; text-decoration: none;  cursor: context-menu; ">SEE MORE...</a>
+        </div>
+  
+        <div style="position: absolute; width: 250px; height: 18px; background-color: none; color: white; font-size: 12px; z-index: 2; margin: 61% 0% 0% 0%; float: bottom;   text-shadow: 1px    1px 2px #000000;  ">
+          <p style="text-align: left; color: DodgerBlue; font-weight: bold;"> Dated: March 7, 2023 | Tuesday</p>
+        </div>
+
+        <img class="zoom"  src="static/News/Sa Pag-iwas sa Sunog, Hindi ka nag-Iisa.png" style="width: 100%; height: 100%;  transition: transform .5s"/>
+
+  </div>
+<!-- END OF ARTICLE -->
+
+
+
+
+
+
+</div>
+<!-- end newS -->
+
+
+
+</div>
+
+
+
+
+<div style="width: 100%; height:400px; overflow: hidden; position: relative; margin: 0% 0% 0% 0%; background-image: url('static/Home/slide1.png');">
+  <div style="width: 60%; height: 100%; background-color: none; position: absolute; margin:0% 0% 0% 0%; z-index: 1;">
+    <p style="position: absolute; color: white; font-size: 40px; font-weight: bold; width: 100%; text-align: center;">DEPARTMENTS AND OFFICES</p>
+  </div>
+  <div style="width: 60%; height: 100%; background-color: #539165; position: absolute; margin:0% 0% 0% 0%; opacity: 80%; "></div>
+  <img src="static/Home/SantaMariaLogo.png" style=" position: absolute; width: 540px; height:500px; margin: -3% 0% 0% 70%; opacity: 30%;  "/>
+</div>
+
+
+
+
+
+<div id="footer" style="width: 100%; height: 250px; background-color: #539165; margin-top: 10%;">
+
+</div>
+<p style="background-color: white; width: 100%; height: 10px; color: black; font-size: 15px; float: bottom; text-align: center; font-weight:bold;">ALL RIGHTS RESERVE 2023</p>
+</body>
+</html>
