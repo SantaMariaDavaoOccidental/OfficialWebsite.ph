@@ -31,9 +31,6 @@ display_c();
 </script>
 
 
-
-
-
   <style>
   /* Make the image fully responsive */
   .carousel-inner img {
@@ -54,13 +51,30 @@ a{
 
 .NewsPanel{
 
-  position: absolute; padding: 0px 3px 0px 3px;  text-indent: 10px;  font-size: 12px; width: 250px; height: 45px; background-color: none; text-align: justify; font-weight: bold; color: white; z-index: 2; margin: 39% 0% 0% 0%; float: bottom;overflow: hidden; line-height: 1.2;  text-shadow: 1px 1px 2px #000000; 
+  position: absolute; padding: 0px 3px 0px 3px;  text-indent: 10px;  font-size: 12px; width: 265px; height: 45px; background-color: none; text-align: justify; font-weight: bold; color: white; z-index: 2; margin: 42% 0% 0% 0%; float: bottom;overflow: hidden; line-height: 1.2;  text-shadow: 1px 1px 2px #000000; 
 }
 .NewsPanel-SeeMore{
 
-  position: absolute; width: 100px; height: 21px; background-color: none; font-weight: bold; font-size: 17px; z-index: 2; margin: 54% 0% 0% 48%; float: bottom;  text-align:   right;   text-shadow: 1px 1px 2px #000000;
+  position: absolute;
+  background-color: none; width: 100px; height: 21px; background-color: none; font-weight: bold; font-size: 17px; z-index: 2; margin: 60% 0% 0% 60%; float: bottom;  text-align:   right;   text-shadow: 1px 1px 2px #000000;
 }
 
+
+.NewsDate{
+ position: absolute; 
+ width: 190px; 
+ height: 18px; 
+ color: white; 
+ font-size: 12px; 
+ z-index: 2; 
+ margin: 69% 0% 0% 0%; 
+ float: bottom;   text-shadow: 1px    1px 2px #000000; 
+ background-color: none;
+ text-align: left; 
+ color: DodgerBlue; 
+ font-weight: bold;
+
+}
 
 .zoom:hover {
   -ms-transform: scale(1.5); /* IE 9 */
@@ -68,36 +82,34 @@ a{
   transform: scale(1.5); 
 
 
+
   </style>
 
 </head>
 
-<body onload="display_ct()" style=" width: 1366px;height: auto; 
-  background-color: none; 
-  margin: 0 auto;">
+<body onload="display_ct()"   style="  width: 1366px; height: auto; background-color: none; margin: 0 auto;">
 
 
+<div style=" position: relative; width: 100%; height: 50px; background-color: white; margin-top: 0%; padding: 0% 0.5% 0% 0.5%;">
 
+  <p style="position: absolute; color: #539165; font-family: Arial Black; font-size: 17px; margin: 1% 0% 0% 1%; ">The Official Website of the Municipality of Santa Maria</p>
 
+  <img src="static/Home/flag.png" style=" position: absolute; width: 30px; height: 15px; margin: 20px 0% 0% 47.5%;  "/>
 
-<div style="background-color: white; height: 50px; width: 100%; padding: 0%;      ">
-<div style="float: right;  margin: 0.5% 1% 0% 0%; ">
+  <h1 id='ct'  style=" position: absolute; color: black; font-size: 13px; background-color: none; width: 30%; margin: 20px 0% 0% 50%;"  ></h1>
 
-<a href="https://web.facebook.com/stamariamunicipalinformation/?_rdc=1&_rdr" target="_blank">
-<img src="static/Home/facebook-logo.png"  alt="HTML5 Icon" width="30" height="30" style="margin: 0px 0px 0px 0px;"/>
-</a>
+  <div style=" position:absolute;  float: right;  margin: 10px 1% 0% 87%;  ">
+    <a href="https://web.facebook.com/stamariamunicipalinformation/?_rdc=1&_rdr" target="_blank" style="text-decoration: none;">
+    <img src="static/Home/facebook-logo.png"  alt="HTML5 Icon" width="30" height="30" style="margin: 0px 0px 0px 0px;"/>
+    </a>
+    <a href="https://www.instagram.com" target="_blank" style="text-decoration: none;">
+    <img src="static/Home/instagram-logo.png" alt="HTML5 Icon" width="30" height="30" style="margin: 0px 0px 0px 5px;"/>
+    </a>
+    <a href="https://www.twetter.com" target="_blank" style="text-decoration: none;">
+    <img src="static/Home/twetter-logo.png" alt="HTML5 Icon" width="30" height="30" style="margin: 0px 0px 0px 5px;">
+    </a>
+  </div>
 
-<a href="https://www.instagram.com" target="_blank">
-<img src="static/Home/instagram-logo.png" alt="HTML5 Icon" width="30" height="30" style="margin: 0px 0px 0px 5px;"/>
-</a>
-
-<a href="https://www.twetter.com" target="_blank"/>
-<img src="static/Home/twetter-logo.png" alt="HTML5 Icon" width="30" height="30" style="margin: 0px 0px 0px 5px;">
-</a>
-</div>
-<p style="position: absolute; color: #539165; font-family: Arial Black; font-size: 15px; margin: 1% 0% 0% 1%; ">The Official Website of the Municipality of Santa Maria</p>
-<img src="static/Home/flag.png" alt="HTML5 Icon" width="30" height="15" style=" position: absolute; margin: 1.1% 0% 0% 52.5%; float: left; "/>
-<span id='ct'  style=" position: absolute; margin: 1% 0% 0% 55%; color: #434242; font-size: 13px; " ></span>
 </div>
 
 
@@ -179,157 +191,123 @@ a{
 <img src="static/Home/flagBackground.png" alt="HTML5 Icon" style="position: absolute; margin: 0% 0% 0% -10%; opacity: 80%; ">
 </div> -->
 
-<div style="background-color: white; width: 100%; height: 1000px; margin: 5% 0% 0% 0%; ">
-<h1 style="margin: 0% 0% 5% 22%;">PLANS AND PROGRAMS</h1>
+
+<div style="position: relative; width: 100%; height: 1000px; background-color: gray; margin:2% 0% 0% 0%; overflow: hidden;">
+  <h1 style="position:relative; color: green; font-family: arial black; margin: 0% 0% 0% 1%; background-color: none; width: 40%; height: ; ">PLANS AND PROGRAMS</h1>
 
 
 
-  <div style=" width: 70%; height: 140px; background-color: #539165; margin: 1% 15% 0% 5%; border-radius: 100px; filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.4));  ">
-    
-      <a href="https://colorhunt.co/palettes/grey">
-        <div style="width: 20%; height: 100%; background-color: white; border: solid #539165 2px; border-radius: 100px; overflow: hidden;">
 
-                <img  src="static/Home/agri.png" style=" margin-top: 2%; display: block; margin-left: auto; margin-right: auto; width: 50%; width: 110px; height: 110px; " />
+  <div class="" style="position:relative; float: left; width:60%; height: 1000px; background-color: yellow;">
 
-          <p style="float: bottom; text-align: center; font-family: arial; font-weight: bold; color: black; ">Agriculture</p>
-        </div>
-      </a>
+    <!-- P1 -->
+    <a href="https://colorhunt.co/palettes/grey">
+      <div style=" position: relative; width: 90%; height: 130px; background-color: #539165; margin: 2% 15% 0% 5%; border-radius: 100px; filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.4));  ">
+      <p style=" position: absolute; color: white; font-size: 22px; margin: 0% 0% 0% 20%;">Agriculture</p>
+      <div style="width: 18%; height: 100%; background-color: white; border: solid #539165 2px; border-radius: 100px; overflow: hidden;">
+                <img  src="static/Home/agri.png" style=" margin: 3%; display: block; margin-left: auto; margin-right: auto; width: 100%;  height: 100%; " />
+      </div>
+      </div>
+    </a>
+    <!-- end P1 -->
+
+    <!-- P2 -->
+    <a href="https://colorhunt.co/palettes/grey">
+      <div style=" position: relative; width: 75%; height: 130px; background-color: #DF2E38; margin: 1.5% 15% 0% 5%; border-radius: 100px; filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.4));  ">
+      <p style=" position: absolute; color: white; font-size: 22px; margin: 0% 0% 0% 20%;">Disaster and Risk</p>
+      <div style="width: 18%; height: 100%; background-color: white; border: solid #DF2E38 2px; border-radius: 100px; overflow: hidden;">
+                <img  src="static/Home/risk.png" style=" margin: 3%; display: block; margin-left: auto; margin-right: auto; width: 100%;  height: 100%; " />
+      </div>
+      </div>
+    </a>
+    <!-- end P2 -->
+
+
+    <!-- P3 -->
+    <a href="https://colorhunt.co/palettes/grey">
+      <div style=" position: relative; width: 75%; height: 130px; background-color: lightskyblue; margin: 1.5% 15% 0% 5%; border-radius: 100px; filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.4));  ">
+      <p style=" position: absolute; color: white; font-size: 22px; margin: 0% 0% 0% 20%;">Health</p>
+      <div style="width: 18%; height: 100%; background-color: white; border: solid lightskyblue 2px; border-radius: 100px; overflow: hidden;">
+                <img  src="static/Home/health.png" style=" margin: 3%; display: block; margin-left: auto; margin-right: auto; width: 100%;  height: 100%; " />
+      </div>
+      </div>
+    </a>
+    <!-- end P3 -->
+
+
+    <!-- P4 -->
+    <a href="https://colorhunt.co/palettes/grey">
+      <div style=" position: relative; width: 75%; height: 130px; background-color: orange; margin: 1.5% 15% 0% 5%; border-radius: 100px; filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.4));  ">
+      <p style=" position: absolute; color: white; font-size: 22px; margin: 0% 0% 0% 20%;">Education</p>
+      <div style="width: 18%; height: 100%; background-color: white; border: solid orange 2px; border-radius: 100px; overflow: hidden;">
+                <img  src="static/Home/education.png" style=" margin: 3%; display: block; margin-left: auto; margin-right: auto; width: 100%;  height: 100%; " />
+      </div>
+      </div>
+    </a>
+    <!-- end P4 -->c
   </div>
 
 
-  <div style=" width: 70%; height: 140px; background-color: #DF2E38; margin: 1% 15% 0% 5%; border-radius: 100px; ">
-      <a href="https://colorhunt.co/palettes/grey">
-        <div style="width: 20%; height: 100%; background-color: white; border: solid #DF2E38 2px;border-radius: 100px; overflow: hidden; ">
+<!-- ARTICLE ----------------------------------------------------------------------------------------->
 
-                <img  src="static/Home/risk.png" style=" margin-top: 2%; display: block; margin-left: auto; margin-right: auto; width: 50%; width: 110px; height: 110px; " />
+<div style="position:relative; float: left; width: 40%; height: 1000px; background-color: red;">
 
-          <p style="float: bottom; text-align: center; font-family: arial; font-weight: bold; color: black; ">Disaster and Risk</p>
-        </div>
-      </a>
-  </div>
-
-  <div style=" width: 70%; height: 140px; background-color: lightskyblue; margin: 1% 15% 0% 5%; border-radius: 100px; ">
-      <a href="https://colorhunt.co/palettes/grey">
-        <div style="width: 20%; height: 100%; background-color: white; border: solid lightskyblue 2px;border-radius: 100px; overflow: hidden; ">
-
-                <img  src="static/Home/health.png" style=" margin-top: 2%; display: block; margin-left: auto; margin-right: auto; width: 50%; width: 110px; height: 110px; " />
-
-          <p style="float: bottom; text-align: center; font-family: arial; font-weight: bold; color: black; ">Health</p>
-        </div>
-      </a>
-  </div>
-
-
-  <div style=" width: 70%; height: 140px; background-color: orange; margin: 1% 15% 0% 5%; border-radius: 100px; ">
-      <a href="https://colorhunt.co/palettes/grey">
-        <div style="width: 20%; height: 100%; background-color: white; border: solid orange 2px;border-radius: 100px; overflow: hidden; ">
-
-                <img  src="static/Home/education.png" style=" margin-top: 2%; display: block; margin-left: auto; margin-right: auto; width: 50%; width: 110px; height: 110px; " />
-
-          <p style="float: bottom; text-align: center; font-family: arial; font-weight: bold; color: black; ">Education</p>
-        </div>
-      </a>
-  </div>
-
-
-
-<!-- news -->
-<div style="position: absolute; width: 297px; height: 1000px; background-color: #539165; margin:-58.1% 0% 0% 78%; border-radius: 0px; 
-">
-  
-  <p style="color: orange; font-size: 20px; font-weight: bold; margin: 10px;">HAPPENING NOW...</p>
-
-<!-- ARTICLE 1 -->
-  <div style="background-color: white; width: 250px; height: 200px; margin: 10% 0% 0% 8%; overflow: hidden;  cursor: context-menu; ">
-
+  <!-- ARTICLE 1 -->
+  <div style=" position: absolute; background-color: white; width: 265px; height: 200px; margin: 10% 0% 0% 0%; overflow: hidden;  cursor: context-menu; ">
        <div class="NewsPanel">
          <p >The Municipal Government of Sta. Maria celebrates the International Women's Day with the theme "We, for Gender Equality and Inclusive Society</p>
        </div>
-
-       <div class="NewsPanel-SeeMore">
-            <a href=""  style=" font-weight: bold;  color: DodgerBlue; text-decoration: none;  cursor: context-menu; ">SEE MORE...</a>
-        </div>
-  
-        <div style="position: absolute; width: 250px; height: 18px; background-color: none; color: white; font-size: 12px; z-index: 2; margin: 61% 0% 0% 0%; float: bottom;   text-shadow: 1px    1px 2px #000000;  ">
-          <p style="text-align: left; color: DodgerBlue; font-weight: bold;"> Dated: March 8, 2023</p>
-        </div>
-
+            <a class="NewsPanel-SeeMore" href=""  style=" font-weight: bold;  color: DodgerBlue; text-decoration: none;  cursor: context-menu; ">SEE MORE...</a> 
+          <p class="NewsDate"> Dated: March 8, 2023</p>
         <img class="zoom"  src="static/News/GendersEquality.png" style="width: 100%; height: 100%;  transition: transform .5s">
-
   </div>
-<!-- END OF ARTICLE -->
+  <!-- END OF ARTICLE -->
 
-<!-- ARTICLE 2 -->
-  <div style="background-color: white; width: 250px; height: 200px; margin: 10% 0% 0% 8%; overflow: hidden;  cursor: context-menu;">
 
+  <!-- ARTICLE 2 -->
+  <div style=" position: absolute; background-color: white; width: 265px; height: 200px; margin: 10% 0% 0% 50%; overflow: hidden;  cursor: context-menu; ">
        <div class="NewsPanel">
-         <p >The Provincial Disaster Risk Reduction and Management Office (PDRRMO) of Davao Occidental facilitated the Refresher Training for incoming NSED which focused on High Angle Rope Rescue. </p>
+         <p >The Provincial Disaster Risk Reduction and Management Office (PDRRMO) of Davao Occidental facilitated the Refresher Training for incoming NSED which focused on High Angle Rope Rescue.</p>
        </div>
-
-       <div class="NewsPanel-SeeMore">
-            <a href=""  style=" font-weight: bold;  color: DodgerBlue; text-decoration: none;  cursor: context-menu; ">SEE MORE...</a>
-        </div>
-  
-        <div style="position: absolute; width: 250px; height: 18px; background-color: none; color: white; font-size: 12px; z-index: 2; margin: 61% 0% 0% 0%; float: bottom;   text-shadow: 1px    1px 2px #000000;  ">
-          <p style="text-align: left; color: DodgerBlue; font-weight: bold;"> Dated: March 6, 2023 | Monday</p>
-        </div>
-
-        <img class="zoom"  src="static/News/Provincial Disaster Risk Reduction and Management.png" style="width: 100%; height: 100%;  transition: transform .5s"/>
-
+            <a class="NewsPanel-SeeMore" href=""  style=" font-weight: bold;  color: DodgerBlue; text-decoration: none;  cursor: context-menu; ">SEE MORE...</a> 
+          <p class="NewsDate">Dated: March 6, 2023 | Monday</p>
+        <img class="zoom"  src="static/News/Provincial Disaster Risk Reduction and Management.png" style="width: 100%; height: 100%;  transition: transform .5s">
   </div>
-<!-- END OF ARTICLE -->
+  <!-- END OF ARTICLE -->
 
-<!-- ARTICLE 3 -->
-  <div style="background-color: white; width: 250px; height: 200px; margin: 10% 0% 0% 8%; overflow: hidden;  cursor: context-menu;">
 
+  <!-- ARTICLE 3 -->
+  <div style=" position: absolute; background-color: white; width: 265px; height: 200px; margin: 49% 0% 0% 0%; overflow: hidden;  cursor: context-menu; ">
        <div class="NewsPanel">
-         <p >PROVISION OF BARANGAY ISOLATION UNIT IN BARANGAY KIDADAN: Gitambongan ni Mayor Dinko Bautista kauban ang Municipal and Regional KALAHI Offices ug Barangay Council ang Ground Breaking Ceremony sa Provision of Barangay Isiolation Unit sa </p>
+         <p >PROVISION OF BARANGAY ISOLATION UNIT IN BARANGAY KIDADAN: Gitambongan ni Mayor Dinko Bautista kauban ang Municipal and Regional KALAHI Offices ug Barangay Council ang Ground Breaking Ceremony sa Provision of Barangay Isiolation Unit sa</p>
        </div>
-
-       <div class="NewsPanel-SeeMore">
-            <a href=""  style=" font-weight: bold;  color: DodgerBlue; text-decoration: none;  cursor: context-menu; ">SEE MORE...</a>
-        </div>
-  
-        <div style="position: absolute; width: 250px; height: 18px; background-color: none; color: white; font-size: 12px; z-index: 2; margin: 61% 0% 0% 0%; float: bottom;   text-shadow: 1px    1px 2px #000000;  ">
-          <p style="text-align: left; color: DodgerBlue; font-weight: bold;"> Dated: March 7, 2023 | Tuesday</p>
-        </div>
-
-        <img class="zoom"  src="static/News/PROVISION OF BARANGAY ISOLATION UNIT IN BARANGAY KIDADAN.png" style="width: 100%; height: 100%;  transition: transform .5s"/>
-
+            <a class="NewsPanel-SeeMore" href=""  style=" font-weight: bold;  color: DodgerBlue; text-decoration: none;  cursor: context-menu; ">SEE MORE...</a> 
+          <p class="NewsDate">Dated: March 7, 2023 | Tuesday</p>
+        <img class="zoom"  src="static/News/PROVISION OF BARANGAY ISOLATION UNIT IN BARANGAY KIDADAN.png" style="width: 100%; height: 100%;  transition: transform .5s">
   </div>
-<!-- END OF ARTICLE -->
+  <!-- END OF ARTICLE -->
 
-<!-- ARTICLE 4 -->
-  <div style="background-color: white; width: 250px; height: 200px; margin: 10% 0% 0% 8%; overflow: hidden;  cursor: context-menu;">
 
+   <!-- ARTICLE 4 -->
+  <div style=" position: absolute; background-color: white; width: 265px; height: 200px; margin: 49% 0% 0% 50%; overflow: hidden;  cursor: context-menu; ">
        <div class="NewsPanel">
          <p >The Sta. Maria Fire Station Personnel, spearheaded by SFO3 Joseph A Esmores, Acting Municipal Fire Marshal, under the supervision of FCINSP KARL P BADILLES, Acting Provincial Fire Director thru the leadership of FSSUPT RICHARD V ARBUTANTE, DSC, MPSM, Regional Director, BFP XI, attended the pre-planning meeting in preparation for the upcoming 1st Quarter Nationwide Simultaneous Earthquake Drill (NSED) CY 2023 held at Heracleo Casco Memorial National High School.</p>
        </div>
-
-       <div class="NewsPanel-SeeMore">
-            <a href=""  style=" font-weight: bold;  color: DodgerBlue; text-decoration: none;  cursor: context-menu; ">SEE MORE...</a>
-        </div>
-  
-        <div style="position: absolute; width: 250px; height: 18px; background-color: none; color: white; font-size: 12px; z-index: 2; margin: 61% 0% 0% 0%; float: bottom;   text-shadow: 1px    1px 2px #000000;  ">
-          <p style="text-align: left; color: DodgerBlue; font-weight: bold;"> Dated: March 7, 2023 | Tuesday</p>
-        </div>
-
-        <img class="zoom"  src="static/News/Sa Pag-iwas sa Sunog, Hindi ka nag-Iisa.png" style="width: 100%; height: 100%;  transition: transform .5s"/>
+            <a class="NewsPanel-SeeMore" href=""  style=" font-weight: bold;  color: DodgerBlue; text-decoration: none;  cursor: context-menu; ">SEE MORE...</a> 
+          <p class="NewsDate">Dated: March 7, 2023 | Tuesday</p>
+        <img class="zoom"  src="static/News/Sa Pag-iwas sa Sunog, Hindi ka nag-Iisa.png" style="width: 100%; height: 100%;  transition: transform .5s">
+  </div>
+  <!-- END OF ARTICLE --> 
 
   </div>
-<!-- END OF ARTICLE -->
 
 
 
 
 
-
+  </div>
 </div>
-<!-- end newS -->
 
-
-
-</div>
 
 
 
@@ -346,9 +324,28 @@ a{
 
 
 
+<div style="background-color: green; height: 50px; width: 100%; padding: 0%; margin-top: 10px;">
+<h3 style="position: absolute; color: #539165; font-family: Arial Black; margin: 0% 0% 0% 1%; ">The Official Website of the Municipality of Santa Maria</h3>
+
+<div style="position: relative; width: 30px; height: 100%; background-color: yellow; margin-left: 50%; padding-top: 10px;">
+<img src="static/Home/flag.png" style=" width: 30px; height: 15px;  "/>
+</div>
+
+
+
+
+</div>
+
+
+
+
 <div id="footer" style="width: 100%; height: 250px; background-color: #539165; margin-top: 10%;">
 
 </div>
 <p style="background-color: white; width: 100%; height: 10px; color: black; font-size: 15px; float: bottom; text-align: center; font-weight:bold;">ALL RIGHTS RESERVE 2023</p>
+
+
+
+
 </body>
 </html>
